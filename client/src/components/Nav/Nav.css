@@ -4,15 +4,57 @@
     float: right;
     justify-content: flex-start;
     align-items: center;
-    background-color: aquamarine;
+    background-color: transparent;
     height: 100vh;
-    width: 8rem;
+    width: 7rem;
+    background-color: rgba(113, 113, 113, 0.191);
 }
 
 .logo {
     margin: 2rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.n {
+    color: rgb(193, 0, 0);
+}
+
+.nav-menu {
+
+    /* background-color: azure; */
+    height: 100%
 }
 
 .nav-item {
-    
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    margin: 3rem auto;
+    padding: 1rem;
+    /* background-color: wheat; */
+
 }
+
+.link-btn {
+background-color: transparent;
+outline: none;
+border: none;
+width: 5rem;
+height: 5rem;
+cursor: pointer;
+transition: 0.75s;
+font-size: 1.3rem;
+color: white;
+
+}
+
+.link-btn:hover {
+    background-color: rgb(33, 33, 33);
+}
+
+.nav-links {
+    text-decoration: none;
+
+}
+
