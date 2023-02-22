@@ -6,12 +6,12 @@
     align-items: center;
     background-color: transparent;
     height: 100vh;
-    width: 9rem;
+    width:9rem;
     /* background-color: rgba(113, 113, 113, 0.191); */
 }
 
 .logo {
-    margin: 2rem;
+    margin: 1rem;
     font-size: 1.5rem;
     color: white;
 }

@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 import { useState, useEffect, React } from 'react'
-
+import './ParkList.css'
 import ParkCard from '../../components/ParkCard/ParkCard'
 
 
@@ -34,7 +34,15 @@ const ParkList = () => {
     />
   ))
 
-  return <div>{fullList}</div>
+  return (
+  <div className='park-list-bckrnd'>
+  <div className='park-list-cnt'>
+    <div className='park-cards'>
+    {fullList}
+    </div>
+    </div>
+    </div>
+  )
 }
 
 export default ParkList
