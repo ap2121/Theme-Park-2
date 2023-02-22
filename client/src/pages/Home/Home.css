@@ -1,7 +1,7 @@
 .home-container {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assests/imgs/wheel-bg.jpg);
+    background-image: url(../../assests/imgs/wheel-bg-blur.jpg);
     background-size: cover;
-
+    
 }
