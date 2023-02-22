@@ -10,18 +10,20 @@ const RideList = () => {
  const getRides = async () => {
     const response = await axios.get(`http://localhost:3001/api/rides`)
     setRides(response.data)
+    console.log(response.data)
  } 
 
  useEffect(()=>{
   getRides()
  }, [])
     
-const getTheRides = rides.map((ride)=>(
+const getTheRides = rides.map((ride) => (
   <RideCard
   key={ride._id}
   image={ride.image}
   description={ride.description}
   name={ride.name}
+
   
   />
 ))
