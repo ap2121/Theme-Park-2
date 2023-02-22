@@ -11,8 +11,10 @@
 
 
 .park-list-cnt {
-    width: 90vw;
-    height: 100vh;
+    max-width: 90vw;
+    min-width: 50vw;
+    max-height: 100vh;
+    min-height: 60vh;
     /* background-color: red; */
     display: flex;
     flex-wrap: nowrap;
