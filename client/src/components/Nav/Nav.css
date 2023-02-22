@@ -5,9 +5,9 @@
     justify-content: flex-start;
     align-items: center;
     background-color: transparent;
-    height: 100vh;
+    height: 95vh;
     width:9rem;
-    /* background-color: rgba(113, 113, 113, 0.191); */
+    background-color: black;
 }
 
 .logo {
@@ -18,31 +18,42 @@
 }
 
 .n {
-    color: rgb(193, 0, 0);
+    color: green;
+    /* color: rgb(193, 0, 0); */
 }
 
 .nav-menu {
 
-    /* background-color: azure; */
-    height: 100%
+    background-color: azure;
+    max-height: 60vh;
+    min-height: 20vh;
 }
 
 .nav-item {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    margin: 3rem auto;
-    padding: 1rem;
-    /* background-color: wheat; */
+    margin: 2rem auto; 
+    padding: 1rem; 
+    background-color: wheat;
+    max-width: 100%;
+    min-width: 50%;
+    max-height: 20%;
+    min-height: 15%;
 
 }
 
 .link-btn {
+display: inline-block;
+position: relative;
+width: 100%;
+height: 20%;
 background-color: transparent;
 outline: none;
 border: none;
-width: 5rem;
-height: 5rem;
+width: 100%;
+height: 100%;
 cursor: pointer;
 transition: 0.75s;
 font-size: 1.3rem;
