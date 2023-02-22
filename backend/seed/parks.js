@@ -4,6 +4,7 @@ const Park = require('../models/park')
 db.on('error', console.error.bind(console, 'MongoDB connection error'))
 
 const main = async () => {
+  
   const parks = [
     {
       image:

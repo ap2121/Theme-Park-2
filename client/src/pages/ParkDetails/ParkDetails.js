@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import RideCard from '../../components/Ride/RideCard'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import './ParkDetails.css'
 
 
 
@@ -18,7 +19,14 @@ const ParkDetails = () => {
     const response = await axios.get(`http://localhost:3001/api/rides/parks/${id}`)
     setCurrentRides(response.data)
   }
-
+  const navigate = useNavigate()
+  const deletePark = async() => {
+    const deleted = await axios.delete(`http://localhost:3001/api/parks/${id}`)
+    if(deleted) {
+      alert('Park has been re-closed')
+      navigate('/parks-list')
+    }
+  }
 
   useEffect(() => {
     getPark()
@@ -47,6 +55,7 @@ const ParkDetails = () => {
         <p>{currentPark.dateClosed}</p>
         <p>{currentPark.description}</p>
         <br></br>
+        <button onClick={deletePark} className='dlt-btn'>Delete Park</button>
         {getTheseRides}
     </div>
   )

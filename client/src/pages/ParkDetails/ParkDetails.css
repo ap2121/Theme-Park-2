@@ -1,0 +1,19 @@
+.dlt-btn {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-family:  'Rye', cursive;
+    /* border: 2px dotted yellow; */
+    border:none;
+    transition: 315ms;
+    transition-timing-function: ease-in;
+}
+
+.dlt-btn:hover {
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    box-shadow:  -10px 5px 5px rgba(0, 0, 0, 0.45);
+
+}

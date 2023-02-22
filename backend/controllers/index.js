@@ -48,9 +48,9 @@ const deletePark = async (req, res) => {
     if (deleted) {
       res.status(200).send('Park Closed')
     }
-    throw new Error('Huh?  There is no such park...')
+   
   } catch (error) {
-    res.status(500).json({ error: error.message })
+    res.status(500).send(error.message)
   }
 }
 
@@ -61,7 +61,7 @@ const deleteRide = async (req, res) => {
     if (deleted) {
       res.status(200).send('Ride Out of Order')
     }
-    throw new Error('Huh?  There is no such ride...')
+    
   } catch (error) {
     res.status(500).json({ error: error.message })
   }
