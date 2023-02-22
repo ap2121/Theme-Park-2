@@ -4,6 +4,8 @@ import { useState, useEffect, React } from 'react'
 
 import ParkCard from '../../components/ParkCard/ParkCard'
 
+
+
 const ParkList = () => {
   const [parks, setParks] = useState([])
 
