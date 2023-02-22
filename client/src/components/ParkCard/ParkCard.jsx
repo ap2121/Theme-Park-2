@@ -6,6 +6,7 @@ const ParkCard = (props) => {
     <Link to={`/parks/details/${props.id}`} className='link' >
       <img src={props.image} alt={props.name} />
       <h3>{props.name}</h3>
+      <h4>{props.location}</h4>
     </Link>
     </div>
 
