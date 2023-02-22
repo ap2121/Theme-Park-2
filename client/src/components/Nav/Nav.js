@@ -5,14 +5,14 @@ const Nav = () => {
   return (
     <div className='nav-container'>
         <div className='logo'>
-            Vaca(n)tion
+            Vaca(<span className='n'>n</span>)tion
         </div>
         <nav className='nav'>
             <ul className='nav-menu'>
-                <li className='nav-item'><Link className='nav-links'>Home</Link></li>
-                <li className='nav-item'><Link className='nav-links'>Parks List</Link></li>
-                <li className='nav-item'><Link className='nav-links'>Rides List</Link></li>
-                <li className='nav-item'><Link className='nav-links'>About</Link></li>
+                <li className='nav-item'><Link className='nav-links' to='/'><button className='link-btn'>Home</button></Link></li>
+                <li className='nav-item'><Link className='nav-links'><button className='link-btn'>Parks List</button></Link></li>
+                <li className='nav-item'><Link className='nav-links'><button className='link-btn'>Rides List</button></Link></li>
+                <li className='nav-item'><Link className='nav-links'><button className='link-btn'>About</button></Link></li>
             </ul>
         </nav>
     </div>
