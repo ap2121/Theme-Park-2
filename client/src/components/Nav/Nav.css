@@ -51,7 +51,8 @@ color: white;
 }
 
 .link-btn:hover {
-    background-color: rgb(33, 33, 33);
+    box-shadow: inset 100px 0 0 0 rgb(193, 0, 0);
+    color: white;
 }
 
 .nav-links {
