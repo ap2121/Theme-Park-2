@@ -30,6 +30,7 @@ const ParkList = () => {
       location={park.location}
       dateClosed={park.dateClosed}
       description={park.description}
+      id={park._id}
     />
   ))
 
