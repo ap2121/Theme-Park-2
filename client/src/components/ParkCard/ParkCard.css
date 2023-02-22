@@ -1,26 +1,51 @@
+
+
 .park-card {
+    font-family: 'Rye', cursive;;
     display: flex; 
     width: 27vw;
     height: 70vh;
-    background-color: aquamarine;
+    background-color: #B9C148;
     /* margin: 1rem; */
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-right: -4em;
-    border: 1px solid black;
-    box-shadow: -10px 5px 5px black;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
     transition: 380ms;
     transition-timing-function: ease-out;
+    filter: grayscale(50%);
+    overflow: hidden;
 } 
 
 .park-card:hover {
     z-index: 1;
     transform: translateY(-20px);
+    filter:grayscale(0);
+    
 }
 
 .park-card:hover ~ .park-card {
     transform: translateX(50px);
+   
   }
   
+  .link {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .park-card img {
+    width:100%;
+    height:75%;
+    background-size:contain;
+    
+  }
+
+  .park-card h4 {
+    font-family: 'Courier New', Courier, monospace;
+  }

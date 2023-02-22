@@ -5,8 +5,11 @@ const Nav = () => {
   return (
     <div className='nav-container'>
         <div className='logo'>
+            <Link to='/' className='link'>
             Vaca(<span className='n'>n</span>)tion
+            </Link>
         </div>
+        
         <nav className='nav'>
             <ul className='nav-menu'>
                 <li className='nav-item'><Link className='nav-links' to='/'><button className='link-btn'>Home</button></Link></li>
