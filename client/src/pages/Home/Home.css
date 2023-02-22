@@ -1,0 +1,6 @@
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assests/imgs/home-bg.jpg);
+    background-size: cover;
+}
