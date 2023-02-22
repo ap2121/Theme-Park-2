@@ -11,16 +11,16 @@
     margin-right: -4em;
     border: 1px solid black;
     box-shadow: -10px 5px 5px black;
-    transition: 300ms;
-    transition-timing-function: linear;
+    transition: 380ms;
+    transition-timing-function: ease-out;
 } 
 
 .park-card:hover {
-    z-index: 3;
-    transform: translateY(-10px);
-    
+    z-index: 1;
+    transform: translateY(-20px);
 }
 
-.park-card:hover~.park-card {
-    transform: translateX(25em);
-}
+.park-card:hover ~ .park-card {
+    transform: translateX(50px);
+  }
+  
