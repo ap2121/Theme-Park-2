@@ -1,0 +1,14 @@
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aquamarine;
+    height: 100vh;
+    width: 8rem;
+}
+
+.logo {
+    margin: 2rem;
+}
