@@ -1,6 +1,10 @@
+
 import axios from 'axios'
 import { useState, useEffect, React } from 'react'
+
 import ParkCard from '../../components/ParkCard/ParkCard'
+
+
 
 const ParkList = () => {
   const [parks, setParks] = useState([])
@@ -26,6 +30,7 @@ const ParkList = () => {
       location={park.location}
       dateClosed={park.dateClosed}
       description={park.description}
+      id={park._id}
     />
   ))
 

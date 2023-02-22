@@ -14,6 +14,6 @@ router.get('/rides', controllers.getAllRides)
 router.get('/rides/:id', controllers.getRideById)
 router.delete('/rides/:id', controllers.deleteRide)
 router.post('/rides', controllers.createRide)
-
+router.get('/rides/parks/:id', controllers.getRideByParkId)
 
 module.exports = router
