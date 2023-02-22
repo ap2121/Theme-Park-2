@@ -1,5 +1,5 @@
 import React from 'react'
-import ParkCard from '../../components/ParkCard'
+import ParkCard from '../../components/ParkCard/ParkCard'
 
 const ParkList = () => {
   return (
