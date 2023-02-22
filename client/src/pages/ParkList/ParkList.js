@@ -1,8 +1,12 @@
 import React from 'react'
+import ParkCard from '../../components/ParkCard'
 
 const ParkList = () => {
   return (
-    <div>ParkList</div>
+    <div>
+      <div>ParkList</div>
+      <ParkCard />
+    </div>
   )
 }
 
