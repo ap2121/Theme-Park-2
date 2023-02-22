@@ -1,0 +1,32 @@
+.park-list-bckrnd {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+
+
+}
+
+
+
+.park-list-cnt {
+    width: 90vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.park-cards {
+display: flex;  
+width: 85vw;
+height: 85vh;
+background-color: blanchedalmond;
+justify-content: flex-start;
+align-items: center;
+overflow-x: scroll;
+
+}
+
