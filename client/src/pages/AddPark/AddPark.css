@@ -1,0 +1,14 @@
+.form-title {
+    text-align: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1em;
+    margin: 20px;
+   
+    
+   }
