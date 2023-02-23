@@ -6,3 +6,24 @@
     background-position: center;
     
 }
+
+.title-cnt {
+    /* background-color: aquamarine; */
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.title {
+    /* background-color: azure; */
+    width: 70%;
+    height: 160px;
+    
+}
+
+.title > h1 {
+    font-size: 55px;
+}
