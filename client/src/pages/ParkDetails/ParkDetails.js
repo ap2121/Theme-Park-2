@@ -4,25 +4,25 @@ import RideCard from '../../components/Ride/RideCard'
 import { useParams, useNavigate } from 'react-router-dom'
 import './ParkDetails.css'
 
-
-
 const ParkDetails = () => {
   const [currentPark, setCurrentPark] = useState('')
-  const [rides, setCurrentRides] = useState([]) 
-  let {id} = useParams()
+  const [rides, setCurrentRides] = useState([])
+  let { id } = useParams()
   const getPark = async () => {
     const response = await axios.get(`http://localhost:3001/api/parks/${id}`)
     setCurrentPark(response.data)
   }
 
-  const getRides = async() => {
-    const response = await axios.get(`http://localhost:3001/api/rides/parks/${id}`)
+  const getRides = async () => {
+    const response = await axios.get(
+      `http://localhost:3001/api/rides/parks/${id}`
+    )
     setCurrentRides(response.data)
   }
   const navigate = useNavigate()
-  const deletePark = async() => {
+  const deletePark = async () => {
     const deleted = await axios.delete(`http://localhost:3001/api/parks/${id}`)
-    if(deleted) {
+    if (deleted) {
       alert('Park has been re-closed')
       navigate('/parks-list')
     }
@@ -32,31 +32,35 @@ const ParkDetails = () => {
     getPark()
   }, [id])
 
-  useEffect(() =>{
+  useEffect(() => {
     getRides()
   }, [id])
-  
-  
-  const getTheseRides = rides.map((ride)=>(
+
+  const getTheseRides = rides.map((ride) => (
     <RideCard
-    key={ride._id}
-    name={ride.name}
-    description={ride.description}
-    image={ride.image}
-    id={ride._id}
+      key={ride._id}
+      name={ride.name}
+      description={ride.description}
+      image={ride.image}
+      id={ride._id}
     />
   ))
-  
+
   return (
-    <div>
-        <h2>{currentPark.name}</h2>
-        <img src={currentPark.image} alt={currentPark.name}/>
-        <p>{currentPark.location}</p>
-        <p>{currentPark.dateClosed}</p>
-        <p>{currentPark.description}</p>
-        <br></br>
-        <button onClick={deletePark} className='dlt-btn'>Delete Park</button>
-        {getTheseRides}
+    <div
+      className="park-deets-cntr"
+      style={{ backgroundImage: `url(${currentPark.image})` }}
+    >
+      <h2>{currentPark.name}</h2>
+      <img src={currentPark.image} alt={currentPark.name} />
+      <p>{currentPark.location}</p>
+      <p>{currentPark.dateClosed}</p>
+      <p>{currentPark.description}</p>
+      <br></br>
+      <button onClick={deletePark} className="dlt-btn">
+        Delete Park
+      </button>
+      {getTheseRides}
     </div>
   )
 }

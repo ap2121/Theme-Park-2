@@ -7,7 +7,6 @@
     background-color: transparent;
     height: 95vh;
     width:9rem;
-    background-color: black;
 }
 
 .logo {
@@ -18,13 +17,11 @@
 }
 
 .n {
-    color: green;
-    /* color: rgb(193, 0, 0); */
+    color: rgb(193, 0, 0);
 }
 
 .nav-menu {
 
-    background-color: azure;
     max-height: 60vh;
     min-height: 20vh;
 }
@@ -36,7 +33,6 @@
     list-style: none;
     margin: 2rem auto; 
     padding: 1rem; 
-    background-color: wheat;
     max-width: 100%;
     min-width: 50%;
     max-height: 20%;
