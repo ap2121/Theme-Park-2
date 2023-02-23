@@ -2,3 +2,18 @@ img {
     width: 200px;
     height: 200px;
 }
+.ride-card img {
+    width: 100%
+}
+.ride-card {
+    width: 300px;
+    height: 300px;
+    background-color:rgb(0, 11, 165);
+    overflow: hidden;
+    transition: 375ms;
+    transition-timing-function: ease-in-out;
+}
+
+.ride-card:hover {
+    height: 400px;
+}
