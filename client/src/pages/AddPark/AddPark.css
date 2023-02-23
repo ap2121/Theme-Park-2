@@ -1,4 +1,5 @@
 .form-title {
+    font-family: 'Rye', cursive;
     text-align: center;
 }
 
@@ -9,6 +10,7 @@
     align-items: center;
     grid-gap: 1em;
     margin: 20px;
+    
    
     
    }

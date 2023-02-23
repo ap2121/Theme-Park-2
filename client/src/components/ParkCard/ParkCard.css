@@ -1,7 +1,7 @@
 
 
 .park-card {
-    font-family: 'Rye', cursive;;
+    font-family: 'Rye', cursive;
     display: flex; 
     min-width: 27vw;
     max-width: 32vw;
@@ -54,3 +54,5 @@
   .park-card h4 {
     font-family: 'Courier New', Courier, monospace;
   }
+
+ 

@@ -52,9 +52,9 @@ const ParkDetails = () => {
         <div className="park-rides">{getTheseRides}</div>
         <div className="park-deets-cntr">
           <img src={currentPark.image} alt={currentPark.name} />
-          <h2>{currentPark.name}</h2>
-          <p>{currentPark.location}</p>
-          <p>{currentPark.dateClosed}</p>
+          <h2 className='current-park-name'>{currentPark.name}</h2>
+          <p className='card-location'>{currentPark.location}</p>
+          <p>{currentPark.dateOpened} - <span>{currentPark.dateClosed}</span></p>
           <p>{currentPark.description}</p>
           <br></br>
           <button onClick={deletePark} className="dlt-btn">
