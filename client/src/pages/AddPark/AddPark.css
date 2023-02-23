@@ -1,16 +1,57 @@
-.form-title {
-    font-family: 'Rye', cursive;
-    text-align: center;
+.form-bg {
+    background-image: url('../../assests/imgs/wheel-bg-blur.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.all-container {
+    display: flex;
+    max-width: 80vw;
+    min-width: 40vh;
+    max-height: 80vh;
+    min-height: 40vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.form {
+    width: 40%;
+    height: 60%;
+    margin-left: 1.5em;
+    /* background-color: burlywood; */
+    
+    
 }
 
 .form-container {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 190px 190px;
     justify-content: center;
     align-items: center;
     grid-gap: 1em;
-    margin: 20px;
+    margin-top: 10px;
+}
+.form-title-div {
+    width: 100%;
+    height: 80px;
     
-   
     
-   }
+    
+}
+
+
+.form-title {
+    font-family: 'Rye', cursive;
+    text-align: center;
+    color:  rgb(193, 0, 0);
+    font-size: 30px;
+    
+    
+}
+
