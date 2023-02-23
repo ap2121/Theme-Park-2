@@ -7,6 +7,7 @@
     background-color: transparent;
     height: 95vh;
     width:9rem;
+    
 }
 
 .logo {
@@ -37,6 +38,7 @@
     min-width: 50%;
     max-height: 20%;
     min-height: 15%;
+    
 
 }
 
@@ -54,6 +56,8 @@ cursor: pointer;
 transition: 0.75s;
 font-size: 1.3rem;
 color: white;
+font-family:'Courier New', Courier, monospace;
+
 
 }
 
@@ -64,6 +68,7 @@ color: white;
 
 .nav-links {
     text-decoration: none;
+    
 
 }
 
