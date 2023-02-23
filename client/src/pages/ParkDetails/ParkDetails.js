@@ -49,20 +49,22 @@ const ParkDetails = () => {
       className="park-deets-bg"
       style={{ backgroundImage: `url(${currentPark.image})` }}
     >
-      <div className="park-deets-parent">
-        <div className="park-rides">{getTheseRides}</div>
-        <div className="park-deets-cntr">
-          <img src={currentPark.image} alt={currentPark.name} />
-          <h2 className="current-park-name">{currentPark.name}</h2>
-          <p className="card-location">{currentPark.location}</p>
-          <p>
-            {currentPark.dateOpened} - <span>{currentPark.dateClosed}</span>
-          </p>
-          <p>{currentPark.description}</p>
-          <br></br>
-          <button onClick={deletePark} className="dlt-btn">
-            Delete Park
-          </button>
+      <div className="filter">
+        <div className="park-deets-parent">
+          <div className="park-rides">{getTheseRides}</div>
+          <div className="park-deets-cntr">
+            <img src={currentPark.image} alt={currentPark.name} />
+            <h2 className="current-park-name">{currentPark.name}</h2>
+            <p className="card-location">{currentPark.location}</p>
+            <p>
+              {currentPark.dateOpened} - <span>{currentPark.dateClosed}</span>
+            </p>
+            <p>{currentPark.description}</p>
+            <br></br>
+            <button onClick={deletePark} className="dlt-btn">
+              Delete Park
+            </button>
+          </div>
         </div>
       </div>
     </div>
