@@ -1,17 +1,14 @@
-
 import axios from 'axios'
 import { useState, useEffect, React } from 'react'
 import './ParkList.css'
 import ParkCard from '../../components/ParkCard/ParkCard'
-
-
 
 const ParkList = () => {
   const [parks, setParks] = useState([])
 
   const getParks = async () => {
     try {
-      const res = await axios.get('http://localhost:3001/api/parks')
+      const res = await axios.get('/api/parks')
       setParks(res.data)
     } catch (error) {
       console.log(error)
@@ -36,12 +33,10 @@ const ParkList = () => {
   ))
 
   return (
-  <div className='park-list-bckrnd'>
-  <div className='park-list-cnt'>
-    <div className='park-cards'>
-    {fullList}
-    </div>
-    </div>
+    <div className="park-list-bckrnd">
+      <div className="park-list-cnt">
+        <div className="park-cards">{fullList}</div>
+      </div>
     </div>
   )
 }
