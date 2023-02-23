@@ -1,8 +1,40 @@
-.park-deets-cntr {
+.park-deets-bg {
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-color:rgb(0, 0, 0);
+}
+
+.park-deets-parent {
+    width:84.7%;
+    height: 100%;
+    background-color:violet;
+    display: flex
+}
+
+.park-rides {
+    height: 80vh;
+    width: 35vw;
+    background-color: tomato;
+    margin-top: 5.5rem;
+    margin-right: 1em;
+}
+
+.park-deets-cntr {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float: right;
+    margin-top: 5.5rem;
+    margin-right: 8rem;
 }
 
 .dlt-btn {

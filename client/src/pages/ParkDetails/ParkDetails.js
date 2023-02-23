@@ -47,20 +47,21 @@ const ParkDetails = () => {
   ))
 
   return (
-    <div
-      className="park-deets-cntr"
-      style={{ backgroundImage: `url(${currentPark.image})` }}
-    >
-      <h2>{currentPark.name}</h2>
-      <img src={currentPark.image} alt={currentPark.name} />
-      <p>{currentPark.location}</p>
-      <p>{currentPark.dateClosed}</p>
-      <p>{currentPark.description}</p>
-      <br></br>
-      <button onClick={deletePark} className="dlt-btn">
-        Delete Park
-      </button>
-      {getTheseRides}
+    <div className="park-deets-bg">
+      <div className="park-deets-parent">
+        <div className="park-rides">{getTheseRides}</div>
+        <div className="park-deets-cntr">
+          <img src={currentPark.image} alt={currentPark.name} />
+          <h2>{currentPark.name}</h2>
+          <p>{currentPark.location}</p>
+          <p>{currentPark.dateClosed}</p>
+          <p>{currentPark.description}</p>
+          <br></br>
+          <button onClick={deletePark} className="dlt-btn">
+            Delete Park
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
