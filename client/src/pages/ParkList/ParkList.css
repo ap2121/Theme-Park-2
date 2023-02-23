@@ -6,7 +6,10 @@
     background-position: center;
 }
 
-
+.filter {
+    height: 100%;
+    width: 100%;
+}
 
 .park-list-cnt {
     max-width: 90vw;

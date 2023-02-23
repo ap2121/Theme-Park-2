@@ -34,8 +34,10 @@ const ParkList = () => {
 
   return (
     <div className="park-list-bckrnd">
-      <div className="park-list-cnt">
-        <div className="park-cards">{fullList}</div>
+      <div className="filter">
+        <div className="park-list-cnt">
+          <div className="park-cards">{fullList}</div>
+        </div>
       </div>
     </div>
   )
