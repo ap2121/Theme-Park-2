@@ -34,7 +34,7 @@
 .park-deets-cntr {
     display: flex;
     flex-direction: column;
-    background-color: darkcyan;
+    background-color: #5F5163;
     height: 80vh;
     width: 40vw;
     display: flex;
@@ -47,13 +47,17 @@
     border-radius: 5px;
     margin-right: 8rem;
     overflow: hidden;
+    color: black;
 }
 .park-deets-cntr img {
     width: 100%;
     height: 400px;
+    border-bottom: 1px solid black;
+    box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .dlt-btn {
+    
     height: 40px;
     width: 100px;
     background-color: red;
@@ -63,6 +67,9 @@
     border:none;
     transition: 315ms;
     transition-timing-function: ease-in;
+    
+    
+    
 }
 
 .dlt-btn:hover {
@@ -71,4 +78,17 @@
     width: 120px;
     box-shadow:  -10px 5px 5px rgba(0, 0, 0, 0.45);
 
+}
+
+.park-deets-cntr h2 {
+    margin-top: 5px;
+    font-size: 35px;
+}
+
+.current-park-name {
+    font-family: 'Rye', cursive;
+}
+
+.card-location {
+    font-size: 20px;
 }

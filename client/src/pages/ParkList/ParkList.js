@@ -28,6 +28,7 @@ const ParkList = () => {
       image={park.image}
       name={park.name}
       location={park.location}
+      dateOpened={park.dateOpened}
       dateClosed={park.dateClosed}
       description={park.description}
       id={park._id}
