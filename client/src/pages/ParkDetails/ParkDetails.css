@@ -51,7 +51,7 @@
 }
 .park-deets-cntr img {
     width: 100%;
-    height: 400px;
+    height: 40vh;
     border-bottom: 1px solid black;
     box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
 }

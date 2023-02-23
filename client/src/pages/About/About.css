@@ -1,0 +1,30 @@
+.about-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/imgs/wheel-bg-blur.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-text {
+  /* background-color: aquamarine; */
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about-header {
+  /* background-color: azure; */
+  width: 70%;
+  height: 160px;
+  
+}
+
+.about-paragraph {
+  font-size: 30px;
+}
