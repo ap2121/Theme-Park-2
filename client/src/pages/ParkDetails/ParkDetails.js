@@ -47,7 +47,7 @@ const ParkDetails = () => {
   ))
 
   return (
-    <div className="park-deets-bg">
+    <div className="park-deets-bg" style={{backgroundImage: `url(${currentPark.image})`}}>
       <div className="park-deets-parent">
         <div className="park-rides">{getTheseRides}</div>
         <div className="park-deets-cntr">

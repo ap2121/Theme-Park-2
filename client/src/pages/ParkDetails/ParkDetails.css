@@ -1,29 +1,34 @@
 .park-deets-bg {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-color:rgb(0, 0, 0);
+    background-size: 200%;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+    
 }
 
 .park-deets-parent {
     width:84.7%;
     height: 100%;
-    background-color:violet;
-    display: flex
+    
+    display: flex;
+    
+    
 }
 
 .park-rides {
     height: 80vh;
     width: 35vw;
-    background-color: tomato;
+    background-color: transparent;
     margin-top: 5.5rem;
     margin-right: 1em;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 
 .park-deets-cntr {
@@ -34,12 +39,18 @@
     width: 40vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     float: right;
     margin-top: 5.5rem;
+    border-radius: 5px;
     margin-right: 8rem;
+    overflow: hidden;
+}
+.park-deets-cntr img {
+    width: 100%;
+    height: 400px;
 }
 
 .dlt-btn {
