@@ -9,19 +9,17 @@ const ParkDetails = () => {
   const [rides, setCurrentRides] = useState([])
   let { id } = useParams()
   const getPark = async () => {
-    const response = await axios.get(`http://localhost:3001/api/parks/${id}`)
+    const response = await axios.get(`/api/parks/${id}`)
     setCurrentPark(response.data)
   }
 
   const getRides = async () => {
-    const response = await axios.get(
-      `http://localhost:3001/api/rides/parks/${id}`
-    )
+    const response = await axios.get(`/api/rides/parks/${id}`)
     setCurrentRides(response.data)
   }
   const navigate = useNavigate()
   const deletePark = async () => {
-    const deleted = await axios.delete(`http://localhost:3001/api/parks/${id}`)
+    const deleted = await axios.delete(`/api/parks/${id}`)
     if (deleted) {
       alert('Park has been re-closed')
       navigate('/parks-list')
@@ -47,14 +45,19 @@ const ParkDetails = () => {
   ))
 
   return (
-    <div className="park-deets-bg" style={{backgroundImage: `url(${currentPark.image})`}}>
+    <div
+      className="park-deets-bg"
+      style={{ backgroundImage: `url(${currentPark.image})` }}
+    >
       <div className="park-deets-parent">
         <div className="park-rides">{getTheseRides}</div>
         <div className="park-deets-cntr">
           <img src={currentPark.image} alt={currentPark.name} />
-          <h2 className='current-park-name'>{currentPark.name}</h2>
-          <p className='card-location'>{currentPark.location}</p>
-          <p>{currentPark.dateOpened} - <span>{currentPark.dateClosed}</span></p>
+          <h2 className="current-park-name">{currentPark.name}</h2>
+          <p className="card-location">{currentPark.location}</p>
+          <p>
+            {currentPark.dateOpened} - <span>{currentPark.dateClosed}</span>
+          </p>
           <p>{currentPark.description}</p>
           <br></br>
           <button onClick={deletePark} className="dlt-btn">
